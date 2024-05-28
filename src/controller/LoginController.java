@@ -25,8 +25,8 @@ public class LoginController {
     @FXML
     private Button btnLogin;
 
-    @FXML // fx:id="btnVolver"
-    private Button btnVolver; // Value injected by FXMLLoader
+    @FXML
+    private Button btnVolver;
 
     @FXML
     private TextField txtNombre;

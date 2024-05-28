@@ -1,7 +1,3 @@
-/**
- * Sample Skeleton for 'CrearActividad.fxml' Controller Class
- */
-
 package controller;
 
 import java.net.URL;
@@ -20,29 +16,29 @@ import static app.App.em;
 
 public class CrearActividadController {
 
-    @FXML // ResourceBundle that was given to the FXMLLoader
+    @FXML 
     private ResourceBundle resources;
 
-    @FXML // URL location of the FXML file that was given to the FXMLLoader
+    @FXML 
     private URL location;
 
-    @FXML // fx:id="datePickerFechaHoraFin"
-    private DatePicker datePickerFechaHoraFin; // Value injected by FXMLLoader
+    @FXML 
+    private DatePicker datePickerFechaHoraFin; 
 
-    @FXML // fx:id="datePickerFechaHoraInicio"
-    private DatePicker datePickerFechaHoraInicio; // Value injected by FXMLLoader
+    @FXML 
+    private DatePicker datePickerFechaHoraInicio; 
 
-    @FXML // fx:id="txtFieldLugar"
-    private TextField txtFieldLugar; // Value injected by FXMLLoader
+    @FXML 
+    private TextField txtFieldLugar; 
 
-    @FXML // fx:id="txtFieldNombreActividad"
-    private TextField txtFieldNombreActividad; // Value injected by FXMLLoader
+    @FXML 
+    private TextField txtFieldNombreActividad; 
 
-    @FXML // fx:id="txtFiledPlazasOfertadas"
-    private TextField txtFiledPlazasOfertadas; // Value injected by FXMLLoader
+    @FXML 
+    private TextField txtFiledPlazasOfertadas;
 
-    @FXML // fx:id="txtFielDesc"
-    private TextField txtFielDesc; // Value injected by FXMLLoader
+    @FXML 
+    private TextField txtFielDesc;
 
     @FXML
     void crearActividad() {

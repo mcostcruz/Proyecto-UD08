@@ -12,11 +12,11 @@ public class UsuarioDAO {
 
     private static Connection conectar(){
         Connection con = null;
-        String url = "jdbc:mysql://"+Conexion.HOST+"/"+Conexion.DATABASE;
+        String url = "jdbc:mysql://"+ Conexion.HOST+ "/" + Conexion.DATABASE;
         try {
             con = DriverManager.getConnection(url, Conexion.USER, Conexion.PASSWORD);
         } catch (SQLException sqlE) {
-            System.out.println("Error en la conexión a la BD "+ Conexion.DATABASE);
+            System.out.println("Error en la conexión a la BD " + Conexion.DATABASE);
         }
         return con;
     }

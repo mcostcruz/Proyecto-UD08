@@ -1,8 +1,3 @@
-/**
- * Sample Skeleton for 'Actividad.fxml' Controller Class
- * @author Fabricio Ferreyra
- */
-
 package controller;
 
 import java.net.URL;
@@ -29,20 +24,20 @@ import static app.App.usuarioLoggeado;
 
 public class ActividadController {
 
-    @FXML // ResourceBundle that was given to the FXMLLoader
+    @FXML
     private ResourceBundle resources;
 
-    @FXML // URL location of the FXML file that was given to the FXMLLoader
+    @FXML
     private URL location;
 
-    @FXML // fx:id="btnAnotarme"
-    private Button btnAnotarme; // Value injected by FXMLLoader
+    @FXML 
+    private Button btnAnotarme; 
 
-    @FXML // fx:id="btnCrearActividad"
-    private Button btnCrearActividad; // Value injected by FXMLLoader
+    @FXML 
+    private Button btnCrearActividad; 
 
-    @FXML // fx:id="tablaActividades"
-    private TableView<Actividad> tablaActividades; // Value injected by FXMLLoader
+    @FXML
+    private TableView<Actividad> tablaActividades; 
 
     @FXML
     private TableColumn<Actividad, String> finColum;
@@ -121,14 +116,10 @@ public class ActividadController {
     }
 
     private void actualizarTabla() {
-        // Get the current items from the TableView
         ObservableList<Actividad> items = tablaActividades.getItems();
-        // Create a new list to hold the updated items
         ObservableList<Actividad> updatedItems = FXCollections.observableArrayList(items);
-        // Refresh the updated item in the list
         int selectedIndex = tablaActividades.getSelectionModel().getSelectedIndex();
         updatedItems.set(selectedIndex, tablaActividades.getSelectionModel().getSelectedItem());
-        // Set the updated items back to the TableView
         tablaActividades.setItems(updatedItems);
     }
 

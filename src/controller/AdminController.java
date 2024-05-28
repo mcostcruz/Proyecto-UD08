@@ -1,8 +1,4 @@
-/**
- * Sample Skeleton for 'Admin.fxml' Controller Class
- */
-
- package controller;
+package controller;
 
  import java.io.BufferedWriter;
  import java.io.File;
@@ -29,20 +25,20 @@ import javafx.event.ActionEvent;
  
      File ficheroActual;
  
-     @FXML // ResourceBundle that was given to the FXMLLoader
+     @FXML
      private ResourceBundle resources;
  
-     @FXML // URL location of the FXML file that was given to the FXMLLoader
+     @FXML 
      private URL location;
  
-     @FXML // fx:id="btnExportarUsuarios"
-     private Button btnExportarUsuarios; // Value injected by FXMLLoader
+     @FXML 
+     private Button btnExportarUsuarios;
  
-     @FXML // fx:id="btnListarUsuarios"
-     private Button btnListarUsuarios; // Value injected by FXMLLoader
+     @FXML
+     private Button btnListarUsuarios; 
  
-     @FXML // fx:id="listViewUsuarios"
-     private ListView<Usuario> listViewUsuarios; // Value injected by FXMLLoader
+     @FXML 
+     private ListView<Usuario> listViewUsuarios;
  
      @FXML
      private Button btnEditarAdmin;
@@ -50,9 +46,8 @@ import javafx.event.ActionEvent;
      @FXML
      private Button btnIrAInicio;
  
-     @FXML // fx:id="btnBannear"
-     private Button btnBannear; // Value injected by FXMLLoader
- 
+     @FXML 
+     private Button btnBannear;
  
      @FXML
      void exportarUsuariosCSV() {
@@ -66,7 +61,7 @@ import javafx.event.ActionEvent;
          listViewUsuarios.getItems().addAll(listaUsuarios);
      }
  
-     @FXML // This method is called by the FXMLLoader when initialization is complete
+     @FXML 
      void initialize() {
          assert btnExportarUsuarios != null : "fx:id=\"btnExportarUsuarios\" was not injected: check your FXML file 'Admin.fxml'.";
          assert btnListarUsuarios != null : "fx:id=\"btnListarUsuarios\" was not injected: check your FXML file 'Admin.fxml'.";

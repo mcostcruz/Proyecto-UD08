@@ -1,7 +1,3 @@
-/**
- * Sample Skeleton for 'Usuario.fxml' Controller Class
- */
-
 package controller;
 
 import java.net.URL;
@@ -25,17 +21,17 @@ import static app.App.em;
 
 public class UsuarioController {
 
-    @FXML // ResourceBundle that was given to the FXMLLoader
+    @FXML
     private ResourceBundle resources;
 
-    @FXML // URL location of the FXML file that was given to the FXMLLoader
+    @FXML 
     private URL location;
 
-    @FXML // fx:id="btnEditar"
-    private Button btnEditar; // Value injected by FXMLLoader
+    @FXML 
+    private Button btnEditar;
 
-    @FXML // fx:id="btnEliminarUsuario"
-    private Button btnEliminarUsuario; // Value injected by FXMLLoader
+    @FXML 
+    private Button btnEliminarUsuario;
 
     @FXML
     private Button btnInicio;
@@ -86,7 +82,7 @@ public class UsuarioController {
         App.cargarEscena("Inicio");
     }
 
-    @FXML // This method is called by the FXMLLoader when initialization is complete
+    @FXML 
     void initialize() {
         assert btnEditar != null : "fx:id=\"btnEditar\" was not injected: check your FXML file 'Usuario.fxml'.";
         assert btnEliminarUsuario != null

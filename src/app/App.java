@@ -64,14 +64,6 @@ public class App extends Application {
         }
     }
 
-    /*public static void guardarArchivo() {
-        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("usuarios.dat"))) {
-            out.writeObject(listaUsuarios);
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-    }*/
-
     public static void guardarLog(LocalDateTime fechaHora, Boolean correcta, Usuario u) {
         try (BufferedWriter out = new BufferedWriter(new FileWriter("access.log", true))) {
             String ok = correcta ? "OK" : "ERROR";
@@ -91,14 +83,6 @@ public class App extends Application {
         TypedQuery<Usuario> query = em.createQuery(jpql, Usuario.class);
         listaUsuarios = query.getResultList();
     }
-
-    /*public static void cargarArchivo() {
-        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("usuarios.dat"))) {
-            listaUsuarios = (List<Usuario>) in.readObject();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-    }*/
 
     public static void crearDialogo(String titulo, String mensaje, String tipo) {
         Dialog<String> dialog = new Dialog<>();

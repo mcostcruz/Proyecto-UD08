@@ -1,7 +1,3 @@
-/**
- * Sample Skeleton for 'EditarUsuario.fxml' Controller Class
- */
-
 package controller;
 
 import java.net.URL;
@@ -24,26 +20,26 @@ import static app.App.em;
 
 public class EditarUsuarioController {
 
-    @FXML // ResourceBundle that was given to the FXMLLoader
+    @FXML
     private ResourceBundle resources;
 
-    @FXML // URL location of the FXML file that was given to the FXMLLoader
+    @FXML
     private URL location;
 
-    @FXML // fx:id="btnEditar"
-    private Button btnEditar; // Value injected by FXMLLoader
+    @FXML 
+    private Button btnEditar;
 
-    @FXML // fx:id="txtNuevaPassword"
-    private PasswordField txtNuevaPassword; // Value injected by FXMLLoader
+    @FXML
+    private PasswordField txtNuevaPassword; 
 
-    @FXML // fx:id="txtNuevoNombreUsuario"
-    private TextField txtNuevoNombreUsuario; // Value injected by FXMLLoader
+    @FXML 
+    private TextField txtNuevoNombreUsuario;
 
     @FXML
     private Label lblNuevoNombre;
 
-    @FXML // fx:id="txtNuevoEmail"
-    private TextField txtNuevoEmail; // Value injected by FXMLLoader
+    @FXML 
+    private TextField txtNuevoEmail;
 
     @FXML
     void editar() {
@@ -88,11 +84,11 @@ public class EditarUsuarioController {
         }
     }
 
-    @FXML // This method is called by the FXMLLoader when initialization is complete
+    @FXML 
     void initialize() {
         if (usuarioLoggeado.equals(usuarioAdmin)) {
-            txtNuevoNombreUsuario.setDisable(true); // Disable the text field
-            // lblNuevoNombre.setVisible(false); // Hide the label
+            txtNuevoNombreUsuario.setDisable(true); 
+            // lblNuevoNombre.setVisible(false);
         }
         assert btnEditar != null : "fx:id=\"btnEditar\" was not injected: check your FXML file 'EditarUsuario.fxml'.";
     }
